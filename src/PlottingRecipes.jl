@@ -4,6 +4,6 @@ __precompile__(true)
 
 module PlottingRecipes
 
-# package code goes here
+include("plot.jl")
 
 end # module
