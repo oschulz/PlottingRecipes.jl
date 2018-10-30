@@ -7,23 +7,9 @@ function plot! end
 export plot!
 
 
-function create_figure end
+abstract type AbstractFigure end
+export AbstractFigure
 
 
-abstract type AbstractPlotBackground end
-
-abstract type AbstractPlotAxis end
-
-abstract type AbstractFigure{NDIMS} end
-
-
-
-"""
-    abstract type PlottingEngine end
-
-Must implement:
-
-* `create_figure(engine::PlottingEngine)::AbstractFigure`
-"""
-
-abstract type PlottingEngine end
+function plotting_recipe! end
+export plotting_recipe!
