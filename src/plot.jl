@@ -10,7 +10,11 @@ export plot!
 function create_figure end
 
 
-abstract type AbstractFigure end
+abstract type AbstractPlotBackground end
+
+abstract type AbstractPlotAxis end
+
+abstract type AbstractFigure{NDIMS} end
 
 
 

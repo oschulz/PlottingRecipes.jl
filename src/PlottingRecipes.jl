@@ -4,6 +4,7 @@ __precompile__(true)
 
 module PlottingRecipes
 
+include("colors.jl")
 include("plot.jl")
 
 end # module
